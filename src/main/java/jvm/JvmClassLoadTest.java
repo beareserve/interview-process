@@ -26,4 +26,8 @@ public class JvmClassLoadTest {
         System.out.println(System.getProperty("java.class.path").replace(";", "\n"));
 
     }
+
+    public void sout() {
+        System.out.println("春碧想你了");
+    }
 }
