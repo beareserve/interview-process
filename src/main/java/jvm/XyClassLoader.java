@@ -2,6 +2,7 @@ package jvm;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class XyClassLoader extends ClassLoader{
@@ -32,11 +33,12 @@ public class XyClassLoader extends ClassLoader{
         return data;
     }
 
-    public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException {
+    public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
         XyClassLoader xyClassLoader = new XyClassLoader("C:\\Users\\run\\IdeaProjects\\interview-process\\target\\classes");
         Class clazz = xyClassLoader.loadClass("jvm.JvmClassLoadTest");
         Object obj = clazz.newInstance();
         Method method = clazz.getDeclaredMethod("sout", null);
+        method.invoke(obj, null);
         System.out.println(clazz.getClassLoader().getClass().getName());
     }
 }
