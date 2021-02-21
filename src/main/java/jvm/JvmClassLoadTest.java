@@ -28,6 +28,6 @@ public class JvmClassLoadTest {
     }
 
     public void sout() {
-        System.out.println("春碧想你了");
+        System.out.println("这是我的方法");
     }
 }
