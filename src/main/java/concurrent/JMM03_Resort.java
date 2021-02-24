@@ -37,3 +37,7 @@ public class JMM03_Resort {
         }
     }
 }
+/*C:\Program Files\Java\jdk1.8.0_281\bin/javap.exe
+ -v -p $FileClass$
+ $OutputPath$
+ */
