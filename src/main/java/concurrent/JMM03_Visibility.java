@@ -2,8 +2,8 @@ package concurrent;
 
 public class JMM03_Visibility {
 
-//    private static volatile boolean initFlag = false;
-    private static boolean initFlag = false;
+    private static volatile boolean initFlag = false;
+//    private static boolean initFlag = false;
 
     public static Integer count = 0;
 

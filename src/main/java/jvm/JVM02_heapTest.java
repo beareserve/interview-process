@@ -9,7 +9,7 @@ public class JVM02_heapTest {
     public static void main(String[] args) throws InterruptedException {
         List<JVM02_deep> list = Lists.newArrayList();
         while (true) {
-            list.add(new JVM02_deep());
+            list.add(new JVM02_deep(0));
 //            Thread.sleep(1);
         }
     }
